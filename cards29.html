@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxSofa Business Card</title>
+ 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+           background-color: aliceblue;
+           
+        }
+        .card {
+           
+        }
+        .card img {
+            
+            object-fit: cover;
+        }
+        .card-content {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width:800px ;
+            margin-left: 18%;
+           margin-top: 4%;
+            height: 600px;
+            border: 1px solid white;
+            box-shadow: 2px 4px 6px 8px grey;
+        }
+        h2 {
+            color: black;
+            background-color: white;
+        }
+        p {
+            color: blue;
+            background-color:white ;
+            font-size: 20px;
+            font-style: italic;
+            font-weight: 300;
+            margin: 5px 0;
+        }
+        .highlight {
+            font-weight: bold;
+            color:darkgray;
+            background-color: white;
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: center;
+        }
+        th {
+            background: black;
+            color: #fff;
+        }
+        .btn {
+            margin-top: 15px;
+            padding: 10px;
+            background:black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn:hover {
+            background: #900026;
+        }
+        .ko{
+            display: flex;
+            width: 100%;
+        }
+        img{
+            margin-top: 30%;
+            width: 550px;
+            height: 500px;
+            margin-left: 10%;
+        }
+        header{
+            background-color: black;
+        color: aqua;
+        text-align: center;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <header>
+       
+        <marquee behavior="" direction="" >FREE DELIVERY IN RAMZAN OFFER</marquee>
+      
+    </header>
+    <div class="contain">
+        <div class="ko">
+            <div class="pol">
+                <img src="img50.jpg" alt="">
+               </div>
+                    <div class="card-content">
+                        <h2>Chase Launge</h2>
+                        <p><span class="highlight">"SPARE – Modern Chaise Lounge"</span></p>
+                        <p>LuxSofa Creations is committed to bringing you the finest and most luxurious sofas, designed with precision and crafted with high-quality materials. Our sofas are not just furniture; they are a statement of elegance and comfort. Whether you're looking for a classic touch or a modern aesthetic, our collection has something to suit every taste.</p>
+                        <p>With customizable options, premium materials, and expert craftsmanship, we guarantee that every sofa we produce meets the highest standards of durability and style. Experience the perfect blend of tradition and innovation with LuxSofa Creations.</p>
+                        <p><strong style="color: black;">Website:</strong><span style="color: gray;">www.oxfordsofacreations.com </span> </p>
+                        <p><strong style="color: black;">Contact:</strong><span style="color: gray;">+92 300 1234567 </span> </p>
+                        <p><strong style="color: black;">Social:</strong><span style="color: gray;">oxfordsofa12@gmail.com </span> </p>
+                        <table>
+                            <tr>
+                                <th>Category</th>
+                                <th>Material</th>
+                                <th>Price Range</th>
+                            </tr>
+                            <tr>
+                                <td>Classic Sofas</td>
+                                <td>Leather/Fabric</td>
+                                <td>PKR 50K-100K</td>
+                            </tr>
+                            <tr>
+                                <td>Modern Sofas</td>
+                                <td>Velvet/Linen</td>
+                                <td>PKR 60K-120K</td>
+                            </tr>
+                            <tr>
+                                <td>Recliner Sofas</td>
+                                <td>Premium Leather</td>
+                                <td>PKR 80K-150K</td>
+                            </tr>
+                            <tr>
+                                <td>Sectional Sofas</td>
+                                <td>Custom Fabrics</td>
+                                <td>PKR 70K-130K</td>
+                            </tr>
+                        </table>
+                        <button class="btn" onclick="addToCart()">Add to Cart</button>
+                    </div>
+               
+        </div>
+    </div>
+   
+    <script>
+        function addToCart() {
+            alert("Sofa added to cart successfully!");
+        }
+    </script>
+    
+</body>
+</html>

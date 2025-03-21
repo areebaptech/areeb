@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oxford Sofa Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        #f{
+            background-color: black;
+        }
+        #df{
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+        }
+        #df:hover{
+            color: aqua;
+        }
+        i{
+            color: yellow;
+        }
+        #pou{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+            font-weight: bold;
+            color: aqua;
+        }
+        #ui{
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            
+            
+        }
+       #ui:hover{
+        color: aqua;
+       }
+       header{
+        background-color: gray;
+        text-align: center;
+        color: white;
+        height: 40px;
+        font-size: x-large;
+        font-weight: bolder;
+        text-transform: uppercase;
+       }
+       #iu{
+        width: 100%;
+        height: 700px;
+       }
+       .kills {
+            position: relative;
+        }
+
+        .kil {
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: justify;
+            margin-top: 15%;
+            margin-left: 20%;
+        }
+
+        #yuo {
+            color: black;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        #er {
+            color: white;
+        }
+
+        #ty {
+            color: white;
+            background-color: black;
+            font-size: x-large;
+            border: 1px solid black;
+            height: 50px;
+            width: 250px;
+            text-align: center;
+            justify-content: center;
+            margin-left: 5%;
+            border-radius: 20px;
+        }
+
+        #ty:hover {
+            background-color: gray;
+            border: 1px solid gray;
+            color: black;
+            border-radius: 20px;
+        }
+
+        .pill {
+            display: flex;
+            gap: 300px;
+        }
+
+        #ii {
+            height: 380px;
+            width: 500px;
+            margin-left: 10%;
+            box-shadow: 2px 4px 6px 8px gainsboro;
+        }
+
+        #yy {
+            color: black;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        #ee {
+            color: grey;
+            font-weight: 500;
+            text-align: justify;
+        }
+
+        #yu {
+            color: white;
+            text-align: center;
+            font-size: xx-large;
+            background-color: aqua;
+            height: 50px;
+            width: 350px;
+            box-shadow: 2px 4px 6px black;
+            align-items: center;
+            margin-left: 40%;
+            text-transform: uppercase;
+        }
+
+        #tt {
+            color: white;
+            background-color: gray;
+            font-size: x-large;
+            border: 1px solid gray;
+            height: 50px;
+            width: 250px;
+            text-align: center;
+            justify-content: center;
+            border-radius: 25px;
+        }
+
+        #tt:hover {
+            background-color: black;
+            border: 1px solid black;
+            color: white;
+            border-radius: 25px;
+        }
+
+        #yuu {
+            width: 350px;
+            font-size: 40px;
+            background-color: aqua;
+            margin-left: 40%;
+            color: white;
+            text-align: center;
+            box-shadow: 2px 4px 6px black;
+        }
+
+        .review-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 12px;
+            box-shadow: 2px 4px 6px black;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-in-out forwards;
+            width: 280px;
+        }
+
+        .review-card:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .review-card:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .review-card img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .review-text {
+            color: white;
+            font-size: 18px;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .kills {
+                position: static;
+                text-align: center;
+            }
+
+            .kil {
+                position: static;
+                margin: 20px;
+                text-align: center;
+            }
+
+            .pill {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+
+            #ii {
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+            }
+
+            #yu, #yuu {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .poi {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        h3{
+            color: aqua;
+            font-size: large;
+        }
+        .poi{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+      
+        .sofa-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 100px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-left: 100px;
+        }
+
+        .sofa-card {
+            background: #fff;
+            padding: 25px;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            width: 300px;
+            border: 1px solid gainsboro;
+        }
+
+        .sofa-card:hover {
+            transform: scale(1.05);
+        }
+
+        #ly {
+            width: 250px;
+            border-radius: 8px;
+        }
+
+        .sofa-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .sofa-price {
+            color: #28a745;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .sofa-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .add-to-cart {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .add-to-cart:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 1200px) {
+            .sofa-container {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 50px;
+                margin-left: 50px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .sofa-container {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+                margin-left: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sofa-container {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 20px;
+                margin-left: 0;
+            }
+
+            .containerss {
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .pol {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        #oo{
+            color: white;
+            background-color: aqua;
+            text-align: center;
+            font-size: 40px;
+            width: 350px;
+            margin: 20px auto;
+            box-shadow: 2px 4px 6px black;
+            text-transform: uppercase;
+        }
+
+        .containerss {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            margin: 20px auto;
+        }
+
+        .s {
+            text-align: center;
+            background-color: aqua;
+            color: white;
+            font-size: 40px;
+            width: 350px;
+            margin: 20px auto;
+            box-shadow: 2px 4px 6px aqua;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        .h {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            height: 50px;
+            width: 100%;
+        }
+
+        .h:hover {
+            background-color: blue;
+        }
+
+        .pol {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            border: 1px solid black;
+            background-color: black;
+            margin-top: 100px;
+            justify-content: center;
+        }
+
+        #po {
+            color: white;
+            font-size: large;
+        }
+
+        #po:hover {
+            color: aqua;
+        }
+
+        #op {
+            color: blue;
+            font-weight: bolder;
+            font-size: larger;
+            text-align: justify;
+        }
+
+        .rows {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>50% off in Ramzan Offer</header>
+    <nav class="bg-gray-900 text-white p-4 shadow-lg" id="f">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold" id="pou">OXFORD SOFA</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#" class="hover:text-gray-400" id="df">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-400" id="df">About</a></li>
+                <li><a href="shop.html" class="hover:text-gray-400" id="df">Shop</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400" id="df">Contact</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-400" id="ui">Category</a>
+                    <ul class="absolute left-0 top-full mt-2 bg-black text-aqua rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-50">
+                        <li><a href="card.html" class="block px-4 py-2 hover:bg-gray-200" id="kij">House</a></li>
+                        <li><a href="hotel.html" class="block px-4 py-2 hover:bg-gray-200"  id="kij">Hotel</a></li>
+                        <li><a href="office.html" class="block px-4 py-2 hover:bg-gray-200"  id="kij">Office</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="md:hidden text-white focus:outline-none" id="menu-toggle">☰</button>
+        </div>
+        <ul class="md:hidden hidden flex-col space-y-2 bg-gray-800 p-4" id="mobile-menu">
+            <li><a href="#" class="block hover:text-gray-400">Home</a></li>
+            <li><a href="about.html" class="block hover:text-gray-400">About</a></li>
+            <li><a href="shop.html" class="block hover:text-gray-400">Shop</a></li>
+            <li><a href="contact.html" class="block hover:text-gray-400">Contact</a></li>
+            <li>
+                <button id="category-toggle" class="w-full text-left hover:text-gray-400">Category ▼</button>
+                <ul class="ml-4 space-y-1 hidden" id="mobile-category-menu">
+                    <li><a href="card.html" class="block hover:text-gray-400">House</a></li>
+                    <li><a href="hotel.html" class="block hover:text-gray-400">Hotel</a></li>
+                    <li><a href="office.html" class="block hover:text-gray-400">Office</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    
+        document.getElementById('category-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-category-menu').classList.toggle('hidden');
+        });
+    </script>
+    
+    <div class="kill">
+        <div class="kills">
+            <img src="img13.jpg" alt="" id="iu" >
+        </div>
+        <div class="kil">
+            <h1 id="yuo">Welcome to Oxford Sofa Company</h1> <br>
+            <p id="er">
+                The term "Oxford Sofa" refers to various sofa models offered by <br>different furniture manufacturers, each with its unique design and features. <br> This design showcases sleek horizontal lines with generous track arms, <br> a tight back, and English seams. Cushion-length kidney pillows accentuate <br> the silhouette, and bun feet with aged brass ferrules and casters add a touch <br>of traditional style.
+            </p>
+            <br><br>
+            <button id="ty">READ MORE</button>
+        </div>
+    </div>
+    <br><br><br><br>
+    <h1 id="yu">ABOUT US</h1><br><br>
+    <div class="kills">
+        <div class="pill">
+            <img src="img10.jpg" alt="" id="ii">
+       
+        <div class="kili">
+            <h1 id="yy">Lexington's Oxford Sofa</h1> <br>
+            <p id="ee">
+                At Oxford Sofa Company, we are passionate about creating high-quality, <br> stylish, and comfortable sofas that bring elegance to your home. With a commitment to <br>craftsmanship, durability, and timeless design, our sofas are made using premium <br> materials and expert techniques to ensure lasting comfort and sophistication.We believe <br>that a sofa is more than just a piece of furniture—it’s the heart of your living space. <br> Whether you prefer classic Chesterfield designs, contemporary minimalism, or luxurious <br>leather finishes, our collection is designed to suit every taste and lifestyle.Customer satisfaction <br> is at the core of our values. From selecting the finest materials to <br> delivering exceptional service, we strive to make your experience with us seamless and enjoyable.
+            </p>
+            <br><br>
+            <button id="tt">READ MORE</button>
+        </div>
+    </div>
+    </div><br><br><br>
+    <div class="reviews-container">
+        <h2 id="yuu">Customer Reviews</h2>
+    </div><br><br>
+    <div class="poi">
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Doe">
+            <h3>John Doe</h3>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Amazing sofa! The quality is top-notch and the comfort is unmatched. Highly recommended!"</p>
+        </div>
+        
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Sarah Khan">
+            <h3>Sarah Khan</h3>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Absolutely love my new Oxford sofa. It fits perfectly in my living room and looks stunning."</p>
+        </div>
+        
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Ahmed Al">
+            <h3>Ahmed Ali</h3>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"Great customer service and a premium feel. Worth every penny!"</p>
+        </div>
+        <div class="review-card">
+            <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Ayesha Khan">
+            <h3>Ayesha Khan</h3>
+            <div class="stars">★★★★★</div>
+            <p class="review-text">"The sofa is stylish and comfortable. Perfect addition to my home!"</p>
+        </div>
+    </div><br><br><br>
+    <h1 id="oo">OUR PRODUCT</h1><br><br>
+    <div class="sofa-container">
+        <a href="set1.html">
+        <div class="sofa-card">
+            <img src="img11.jpg" alt="Sofa 1" id="ly">
+            <div class="sofa-name">Oxford Classic</div>
+            <div class="sofa-price">$499</div>
+            <p class="sofa-description">A timeless design with supreme comfort.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+     </a>
+    <a href="set2.html">
+        <div class="sofa-card">
+            <img src="img2.jpg" alt="Sofa 2" id="ly">
+            <div class="sofa-name">Modern Comfort</div>
+            <div class="sofa-price">$599</div>
+            <p class="sofa-description">Stylish and cozy, perfect for any home.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set3.html">
+        <div class="sofa-card">
+            <img src="img44.jpg" alt="Sofa 3" id="ly">
+            <div class="sofa-name">Luxury Lounge</div>
+            <div class="sofa-price">$699</div>
+            <p class="sofa-description">Elegance meets relaxation in this premium sofa.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set4.html">
+        <div class="sofa-card">
+            <img src="img50.jpg" alt="Sofa 4" id="ly">
+            <div class="sofa-name">Royal Plush</div>
+            <div class="sofa-price">$799</div>
+            <p class="sofa-description">Unparalleled comfort with a luxurious touch.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set5.html">
+        <div class="sofa-card">
+            <img src="img52.jpg" alt="Sofa 5" id="ly">
+            <div class="sofa-name">Minimalist Haven</div>
+            <div class="sofa-price">$549</div>
+            <p class="sofa-description">A sleek, modern design for a minimalist look.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set6.html">
+        <div class="sofa-card">
+            <img src="img20.jpg" alt="Sofa 6" id="ly">
+            <div class="sofa-name">Urban Retreat</div>
+            <div class="sofa-price">$649</div>
+            <p class="sofa-description">Perfect blend of style and comfort.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set7.html">
+        <div class="sofa-card">
+            <img src="img62.jpg" alt="Sofa 7" id="ly">
+            <div class="sofa-name">Vintage Charm</div>
+            <div class="sofa-price">$729</div>
+            <p class="sofa-description">Classic design with a modern twist.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set8.html">
+        <div class="sofa-card">
+            <img src="img70.jpg" alt="Sofa 8" id="ly">
+            <div class="sofa-name">Cozy Corner</div>
+            <div class="sofa-price">$579</div>
+            <p class="sofa-description">Compact and comfortable for small spaces.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    </div>
+
+    <div class="sofa-container">
+        <a href="set9.html">
+        <div class="sofa-card">
+            <img src="img2.jpg" alt="Sofa 9">
+            <div class="sofa-name">Elegant Comfort</div>
+            <div class="sofa-price">$659</div>
+            <p class="sofa-description">A sleek and elegant design for modern homes.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set10.html">
+        <div class="sofa-card">
+            <img src="img72.jpg" alt="Sofa 10">
+            <div class="sofa-name">Chic Lounge</div>
+            <div class="sofa-price">$719</div>
+            <p class="sofa-description">A contemporary look with maximum comfort.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set11.html">
+        <div class="sofa-card">
+            <img src="img8.jpg" alt="Sofa 11">
+            <div class="sofa-name">Grand Luxe</div>
+            <div class="sofa-price">$849</div>
+            <p class="sofa-description">A high-end luxurious sofa for a grand feel.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    <a href="set12.html">
+        <div class="sofa-card">
+            <img src="img48.jpg" alt="Sofa 12">
+            <div class="sofa-name">Classic Wooden</div>
+            <div class="sofa-price">$689</div>
+            <p class="sofa-description">A timeless wooden frame with soft cushioning.</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </a>
+    </div><br><br><br><br>
+    <div class="containerss">
+        <h2 class="s">Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit" class="h">Send Message</button>
+        </form>
+        <p id="responseMessage"></p>
+    </div>
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let password = document.getElementById("password").value.trim();
+        let message = document.getElementById("message").value.trim();
+        let responseMessage = document.getElementById("responseMessage");
+    
+        if (name === "" || email === "" || password === "" || message === "") {
+            responseMessage.style.color = "red";
+            responseMessage.textContent = "All fields are required!";
+            return;
+        }
+    
+        if (password.length < 6) {
+            responseMessage.style.color = "red";
+            responseMessage.textContent = "Password must be at least 6 characters long!";
+            return;
+        }
+    
+        responseMessage.style.color = "green";
+        responseMessage.textContent = "Message sent successfully!";
+        document.getElementById("contactForm").reset();
+    });
+</script>
+<footer>
+    <div class="you">
+        <div class="pol">
+            <div class="rows">
+                <h2 id="op">USEFUL LINK</h2>
+                <a href="home.html"> <h4 id="po">Home</h4></a>
+                <a href="about.html"><h4 id="po">About Us</h4></a>
+                <a href="contact.html"><h4 id="po">Contact Us</h4></a>
+               </div>
+               <div class="rows">
+                   <h2 id="op">PRODUCT</h2>
+                <a href="card.html"><h4 id="po">House Sofa</h4></a>
+               <a href="office.html"> <h4 id="po">Office Sofa</h4></a>
+                <a href="hotel.html"><h4 id="po">Hotel Sofa</h4></a>
+               </div>
+               <div class="rows">
+                   <h2 id="op">CONTACT US</h2>
+                <h4 id="po"><i class="fas fa-phone"></i> 0321-5432136</h4>
+                <h4 id="po"><i class="fas fa-envelope"></i> oxfordsofa12@gmail.com</h4>
+           
+        </div>
+    </div>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        color: blue;
+    }
+    body{
+       background-color: gray;
+    }
+    .parent{
+        background-color: antiquewhite;
+    }
+    p{
+        color: black;
+        font-size: large;
+        font-weight: 300;
+    }
+    h2{
+        color: black;
+        font-weight: bolder;
+    }
+    h4{
+        color: aqua;
+        font-size: larger;
+        font-weight: 800;
+    }
+    h3{
+        color: black;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+   
+   
+   header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+   h5{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+   }
+    .child{
+        text-align: justify;
+        margin-left: 20%;
+       border-left:20px solid aqua;
+       padding: 20px;
+        border-right:2px solid black;
+    }
+    .row{
+       display: flex;
+      margin-top: 0px;
+    }
+    .table{
+        text-align: center;
+        border: 1px solid green;
+    }
+   
+tr{
+    background-color: salmon;
+}
+td{
+    color: white;
+}
+button{
+        background-color: aqua;
+        margin-top: 20px;
+        color: white;
+        height: 40px;
+        width: 280px;
+        border: 1px solid white;
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 1;
+        text-align: center;
+        align-items: center;
+        margin-left: 30%;
+    }
+    button:hover{
+        background-color: aqua;
+        border-radius: 20px;
+        border: 1px solid aqua;
+    }
+    button::before{
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transform: translateX(-90%);
+        transition: all 0.5s linear infinite;
+        position: absolute;
+        background-color:black;
+        border: 1px solid black;
+    }
+    button:hover::before{
+       transform: translateX(0%);
+       border: 1px solid black;
+    }
+    button::after{
+        content: '';
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        transform: translateX(90%);
+        transition: all 0.5s linear infinite;
+        position: absolute;
+        background-color: black;
+        border: 1px solid black;
+    }
+    button:hover::after{
+       transform: translateX(50%);
+       border: 1px solid black;
+    }
+   img{
+    height: 500px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 30px;
+   }
+   </style>
+<body>
+    <header>
+        <h5><marquee behavior="" direction="">DRAWING ROOM SOFA SET</marquee></h5>
+    </header>
+    <div class="parent">
+    <div class="row">
+       <div class="pak">
+        <img src="img3.jpg" alt="">
+       </div>
+        <div class="child">
+          <h1>Drawing Room Sofa Set</h1>
+          <h2>CDS0002</h2>
+          <h4>Rs=150,000.00</h4>
+          <h3>Description</h3>
+          <p> 
+            Modern Drawing Room Sofa Set Design.
+
+            Four Seater With Three & Single Chairs Sofa Set Design.
+            
+            Bold  arm sofa with Modern  Tufting Cushion Work.
+            
+            Beautiful Back Tufted Cushion Design with Beige Color Scheme.
+            
+            This Sofa with Beige  Fabric Cushion Work.
+            
+            Beautiful Wooden Black Border theme & Wooden Legs.
+            
+            Base With Black & Golden Polish theme Work.
+            
+            Make on order.
+            
+            
+            
+            
+            </p>
+            <table border="1" style="border: 1px solid black;text-align: justify;">
+                <tr>
+                    <td style="background-color: black;color: white;">Features</td>
+                    <td style="text-align: center;background-color: black;color: white;">Descriptions</td>
+                </tr>
+                <tr>
+                    <td> Modern and Comfortable</td>
+                    <td>A premium recliner sofa designed for maximum comfort, featuring a sturdy frame, plush cushions, and a modern design, perfect for living rooms and lounges.</td>
+                </tr>
+                <tr>
+                    <td>Room Style</td>
+                    <td>Luxurious and sophisticated drawing room with a blend of classic and modern elements.</td>
+                </tr>
+                <tr>
+                    <td>Leather/Fabric</td>
+                    <td>	Large, textured rug adding warmth and enhancing the room's decor.</td>
+                </tr>
+                <tr>
+                    <td>Wall Decor</td>
+                    <td>Decorative wall art contributing to a sophisticated ambiance</td>
+                </tr>
+    
+            </table>
+            <button>ADD TO CART</button><br>
+            <button>READ MORE</button>
+        </div>
+        </div>
+        
+    </div>
+</body>
+</html>

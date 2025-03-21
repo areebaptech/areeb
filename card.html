@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <Style>
+        .row{
+           display: flex;
+           gap: 60px;
+           margin-left: 50px;
+        }
+        body{
+            background-color: white;
+        }
+        .container{
+            margin-left: 40px;
+            margin-top: 100px;
+        }
+        .card{
+            text-align: center;
+            border: 1px solid gray;
+            height: 450px;
+            border-radius: none;
+            padding: 30px;
+            box-shadow: 2px 4px 5px 6px white;
+            transition: all;
+            transition-duration: 3s;
+            background-color:white;
+            transition-timing-function: ease-in-out;
+        }
+        .card:hover{
+            transform: scale(0.95);
+        }
+        h5{
+            color: grey;
+        }
+        h4{
+            color: black;
+            font-weight: bold;
+        }
+        body{
+            background-color: ;
+        }
+        p{
+            color: blue;
+            font-weight: bold;
+            font-weight: 600;
+            font-size: large;
+        }
+        button{
+            background-color: black;
+            margin-top: 20px;
+            color: white;
+            height: 40px;
+            width: 180px;
+            border: 1px solid white;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            z-index: 1;
+        }
+        button:hover{
+            background-color: aqua;
+            border-radius: 20px;
+            border: 1px solid salmon;
+        }
+        button::before{
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            transform: translateX(-90%);
+            transition: all 0.5s linear infinite;
+            position: absolute;
+            background-color:salmon;
+            border: 1px solid salmon;
+        }
+        button:hover::before{
+           transform: translateX(0%);
+           border: 1px solid salmon;
+        }
+        button::after{
+            content: '';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            transform: translateX(90%);
+            transition: all 0.5s linear infinite;
+            position: absolute;
+            background-color: salmon;
+            border: 1px solid salmon;
+        }
+        button:hover::after{
+           transform: translateX(50%);
+           border: 1px solid salmon;
+        }
+        img{
+            height: 250px;
+           
+        }
+        .parent{
+            position: relative;
+        }
+       
+        .child{
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+        #o{
+            color: white;
+            font-weight: 400;
+        }
+        h1{
+            color: aqua;
+        }
+        #k{
+            height:700px ;
+            width: 100%;
+        }
+        h6{
+            background-color: black;
+            color: white;
+            font-weight: bolder;
+            font-size: 30px;
+            height: 50px;
+            width: 250px;
+            text-align: center;
+            border-radius: 30px;
+            border: 1px solid black;
+           line-height: 50px;
+        }
+        h6:hover{
+            background-color: blue;
+            color: black;
+            border: 1px solid blue;
+        }
+      .pol{
+        display: flex;
+        gap: 40px;
+        border: 1px solid black;
+        background-color: black;
+        margin-top: 50px;
+      }
+      h3{
+        color: white;
+        font-size: large;
+      }
+      h3:hover{
+        border-bottom: 1px solid aqua;
+        color: aqua;
+      }
+      h2{
+        color: aqua;
+        font-weight: 500;
+        font-size: larger;
+      }
+      .rows{
+        margin-left: 150px;
+      }
+      #c{
+        height: 50px;
+      }
+      i{
+        color: yellow;
+      }
+      a{
+        text-decoration: none;
+      }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="img63.jpg" alt="" id="k">
+        <div class="child">
+            <h1>HOUSE SOFAS PRODUCT</h1>
+            <p id="o">A house sofa is a versatile piece of furniture designed for comfort and style <br> in a home setting. It typically features a cushioned seat, backrest, and armrests, providing a cozy <br> spot for relaxation, socializing, or watching TV. House sofas come in various <br> styles, sizes, and materials, including fabric, leather, and synthetic blends.</p>
+            <h6>READ MORE</h6>
+        </div>
+    </div>
+       
+    <div class="container">
+        <div class="row">
+            <a href="cards1.html">
+        <div class="card">
+            <img src="sofa.jpg" alt="">
+                <h5>DRAWING ROOM SOFA</h5>
+                <H4>BECWSOSO</H4>
+                <P>RS=100000.00</P>
+                <button>ADD TO CART</button>
+        </div>
+    </a>
+    <a href="cards2.html">
+        <div class="card">
+            <img src="img2.jpg" alt="">
+                <h5>DRAWING ROOM SOFA</h5>
+                <H4>CDRS0067</H4>
+                <P>RS=158,000.00</P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards3.html">
+        <div class="card">
+            <img src="img3.jpg" alt=""  style="height: 250px;width: 250px;">
+                <h5>DRAWING ROOM SOFA</h5>
+                <H4>CDS0002</H4>
+                <P>RS=150,000.00</P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards4.html">
+        <div class="card">
+            <img src="img4.jpg" alt="">
+                <h5>DRAWING ROOM SOFA</h5>
+                <H4>CEDRS041</H4>
+                <P>RS=180,000.00</P>
+                <BUtton >ADD TO CART</BUtton>
+        </div>
+    </a>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <a href="cards5.html">
+        <div class="card">
+            <img src="img5.jpg" alt="">
+                <h5>U-Shape Sofa</h5>
+                <H4>MCUS007</H4>
+                <P>RS= 156,000.00</P>
+                <button>ADD TO CART</button>
+        </div>
+    </a>
+    <a href="cards6.html">
+        <div class="card">
+            <img src="img6.jpg" alt="">
+                <h5>U-Shape Sofa</h5>
+                <H4>MUSS0004</H4>
+                <P>RS=156,000.00</P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards7.html">
+        <div class="card">
+            <img src="img7.jpg" alt="">
+                <h5>U-Shape Sofa</h5>
+                <H4>SDUS009</H4>
+                <P>RS=160,000.00</P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+        <a href="cards8.html">
+        <div class="card">
+            <img src="img8.jpg" alt="">
+                <h5>U-Shape Sofa</h5>
+                <H4>LDUSS005</H4>
+                <P>RS=243,000.00</P>
+                <BUtton >ADD TO CART</BUtton>
+        </div>
+    </a>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <a href="cards9.html">
+        <div class="card">
+            <img src="img9.jpg" alt="">
+                <h5>L-Shape Sofa</h5>
+                <H4>NLSS0010</H4>
+                <P>RS=105,000.00</P>
+                <button>ADD TO CART</button>
+        </div>
+    </a>
+    <a href="cards10.html">
+        <div class="card">
+            <img src="img10.jpg" alt="">
+                <h5>L-Shape Sofa</h5>
+                <H4>SCS0009</H4>
+                <P>RS=85,000.00</P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards11.html">
+        <div class="card">
+            <img src="img11.jpg" alt="">
+                <h5>L-Shape Sofa</h5>
+                <H4>TLS0011</H4>
+                <P>RS=120,000.00
+                </P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards12.html">
+        <div class="card">
+            <img src="img12.jpg" alt=""  style="height: 250px;width: 250px;">
+                <h5>L-Shape Sofa</h5>
+                <H4>WLSS0006</H4>
+                <P>RS=114,000.00</P>
+                <BUtton >ADD TO CART</BUtton>
+        </div>
+    </a>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <a href="cards13.html">
+        <div class="card">
+            <img src="img13.jpg" alt="" style="height: 250px;width: 250px;">
+                <h5>Lounge Sofa</h5>
+                <H4>MLS0017</H4>
+                <P>RS=196,000.00</P>
+                <button>ADD TO CART</button>
+        </div>
+    </a>
+    <a href="cards14.html">
+        <div class="card">
+            <img src="img14.jpg" alt=""  style="height: 250px;width: 250px;">
+                <h5>Lounge  Sofa</h5>
+                <H4>MLS0020</H4>
+                <P>RS=92,000.00</P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards15.html">
+        <div class="card">
+            <img src="img15.jpg" alt=""  style="height: 250px;width: 250px;">
+                <h5>Lounge  Sofa</h5>
+                <H4>MLS0032</H4>
+                <P>RS= 66,000.00
+                </P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards16.html">
+        <div class="card">
+            <img src="img16.jpg" alt=""  style="height: 250px;width: 250px;">
+                <h5>Lounge  Sofa</h5>
+                <H4>MLS0038</H4>
+                <P>RS=₨ 69,000.00</P>
+                <BUtton >ADD TO CART</BUtton>
+        </div>
+    </a>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <a href="cards17.html">
+        <div class="card">
+            <img src="img17.jpg" alt="">
+                <h5>Lounge Sofa</h5>
+                <H4>BAS0041</H4>
+                <P>RS= 72,000.00</P>
+                <button>ADD TO CART</button>
+        </div>
+    </a>
+    <a href="cards18.html">
+        <div class="card">
+            <img src="img18.jpg" alt="">
+                <h5>Drawing Room Sofa</h5>
+                <H4>BDRS0038</H4>
+                <P>RS=96,000.00</P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards19.html">
+        <div class="card">
+            <img src="img19.jpg" alt="">
+                <h5>L-Shape Sofa</h5>
+                <H4>BLSS0012</H4>
+                <P>RS=120,000.00</P>
+                <BUtton>ADD TO CART</BUtton>
+        </div>
+    </a>
+    <a href="cards20.html">
+        <div class="card">
+            <img src="img20.jpg" alt="">
+                <h5>U-Shape Sofa</h5>
+                <H4>CUSDS006</H4>
+                <P>RS=187,000.00</P>
+                <BUtton >ADD TO CART</BUtton>
+        </div>
+    </div>
+    </div>
+   <footer>
+    <div class="you">
+        <div class="pol">
+            <div class="rows">
+                <h2>USEFUL LINK</h2>
+                <a href="home.html"> <h3 id="po">Home</h3></a>
+                <a href="about.html"><h3 id="po">About Us</h3></a>
+                <a href="contact.html"><h3 id="po">Contact Us</h3></a>
+               </div>
+               <div class="rows">
+                   <h2 id="op">PRODUCT</h2>
+                <a href="card.html"><h3 id="po">House Sofa</h3></a>
+               <a href="office.html"> <h3 id="po">Office Sofa</h3></a>
+                <a href="hotel.html"><h3 id="po">Hotel Sofa</h3></a>
+               </div>
+               <div class="rows">
+                   <h2 id="op">CONTACT US</h2>
+                <h3 id="po"><i class="fas fa-phone"></i> 0321-5432136</h3>
+                <h3 id="po"><i class="fas fa-envelope"></i> oxfordsofa12@gmail.com</h3>
+        </div>
+    </div>
+   </footer>
+</body>
+</html>

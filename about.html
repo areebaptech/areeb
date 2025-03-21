@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+         #f{
+            background-color: black;
+        }
+        #df{
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+        }
+        #df:hover{
+            color: aqua;
+        }
+        #pou{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: xx-large;
+            font-weight: bold;
+            color: aqua;
+        }
+        #ui{
+            color: white;
+            font-size: larger;
+            font-weight: bold;
+            
+            
+        }
+       #ui:hover{
+        color: aqua;
+       }
+       header{
+        background-color: gray;
+        text-align: center;
+        color: white;
+        height: 40px;
+        font-size: x-large;
+        font-weight: bolder;
+        text-transform: uppercase;
+       }
+       #kij:hover{
+        background-color: aqua;
+       }
+       #iu{
+        width: 100%;
+        height: 700px;
+       }
+       #j {
+    color: gray;
+    font-size: clamp(1rem, 2vw, 3cqb);
+}
+
+#k {
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.west {
+    display: flex;
+    margin-left: 5%;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+
+#l {
+    color: gray;
+    font-size: large;
+    line-height: 27px;
+}
+
+#m {
+    color: black;
+    font-size: xx-large;
+}
+
+#e {
+    color: blue;
+    border-bottom: 1px solid blue;
+    font-size: large;
+    width: 100px;
+}
+
+#e:hover {
+    color: gray;
+    border-bottom: 1px solid gray;
+}
+
+.south {
+    display: flex;
+    gap: 10%;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+#q {
+    font-size: 20px;
+    font-weight: bolder;
+    color: blue;
+}
+
+.side {
+    margin-top: 30px;
+}
+
+#i {
+    font-size: 40px;
+}
+
+.g {
+    margin-left: 5%;
+}
+
+.ee {
+    display: flex;
+    margin-left: 5%;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.bb {
+    border: 1px solid grey;
+    background-color: black;
+    box-shadow: 2px 4px 6px 8px;
+    margin-top: 70px;
+}
+
+#qw {
+    color: white;
+    font-size: larger;
+    text-align: center;
+}
+
+#oo {
+    color: aqua;
+    text-align: center;
+}
+
+.pol {
+    display: flex;
+    gap: 30px;
+    border: 1px solid black;
+    background-color: black;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+h4 {
+    color: white;
+    font-size: large;
+}
+
+h4:hover {
+    
+    color: aqua;
+}
+
+h2 {
+    color: blue;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.rows {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#c {
+    height: 50px;
+}
+
+i {
+    color: yellow;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .west, .south, .ee, .pol {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .rows {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #i {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #j, #l, #e, #m, #q, h2, h3 {
+        font-size: medium;
+    }
+    #i {
+        font-size: 25px;
+    }
+    .west, .south, .ee, .pol {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #j, #l, #e, #m, #q, h2, h3 {
+        font-size: small;
+    }
+    #i {
+        font-size: 20px;
+    }
+    .west, .south, .ee, .pol {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>50% off in Ramzan Offer</header>
+    <nav class="bg-gray-900 text-white p-4 shadow-lg" id="f">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold" id="pou">OXFORD SOFA</a>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#" class="hover:text-gray-400" id="df">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-400" id="df">About</a></li>
+                <li><a href="shop.html" class="hover:text-gray-400" id="df">Shop</a></li>
+                <li><a href="contact.html" class="hover:text-gray-400" id="df">Contact</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-gray-400" id="ui">Category</a>
+                    <ul class="absolute left-0 top-full mt-2 bg-black text-aqua rounded shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-50">
+                        <li><a href="card.html" class="block px-4 py-2 hover:bg-gray-200" id="kij">House</a></li>
+                        <li><a href="hotel.html" class="block px-4 py-2 hover:bg-gray-200"  id="kij">Hotel</a></li>
+                        <li><a href="office.html" class="block px-4 py-2 hover:bg-gray-200"  id="kij">Office</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <button class="md:hidden text-white focus:outline-none" id="menu-toggle">☰</button>
+        </div>
+        <ul class="md:hidden hidden flex-col space-y-2 bg-gray-800 p-4" id="mobile-menu">
+            <li><a href="#" class="block hover:text-gray-400">Home</a></li>
+            <li><a href="about.html" class="block hover:text-gray-400">About</a></li>
+            <li><a href="shop.html" class="block hover:text-gray-400">Shop</a></li>
+            <li><a href="contact.html" class="block hover:text-gray-400">Contact</a></li>
+            <li>
+                <button id="category-toggle" class="w-full text-left hover:text-gray-400">Category ▼</button>
+                <ul class="ml-4 space-y-1 hidden" id="mobile-category-menu">
+                    <li><a href="card.html" class="block hover:text-gray-400">House</a></li>
+                    <li><a href="hotel.html" class="block hover:text-gray-400">Hotel</a></li>
+                    <li><a href="office.html" class="block hover:text-gray-400">Office</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    
+        document.getElementById('category-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-category-menu').classList.toggle('hidden');
+        });
+    </script><br><br>
+    <div class="east">
+        <div class="west">
+            <div class=" col-sm-4" >
+            <div class="north">
+                <h2 id="j">SOME WORDS ABOUT US</h2>
+                <h1 id="k">Well-coordinated <br> teamwork speaks <br> About Us</h1>
+            </div>
+        </div>
+        <div class=" col-sm-4" >
+            <div class="north">
+                <h2 id="m">We love what we do</h2>
+                <h1 id="l">A small river named Duden flows by <br> their place and supplies it with the <br> necessary regelialia.</h1>
+                <h5 id="e">Read More</h5>
+            </div>
+        </div>
+        <div class=" col-sm-4" >
+            <div class="north">
+                <h2 id="m">Our working process</h2>
+                <h1 id="l">She packed her seven versalia, put <br> her initial into the belt and made <br> herself on the way.</h1>
+                <h5 id="e">Read More</h5>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="east">
+        <div class="south">
+            <img src="img68.jpg" alt="" class="g">
+            <div class="side">
+                <h2 id="j">SEEMINGLY ELEGANT DESIGN</h2>
+                <h1 id="i">About our online store</h1>
+                <p id="q">Welcome to<span style="color: black;"> [OXFORD SOFA COMPANY]</span>, where innovation meets <br> excellence. We are a dedicated team of professionals committed to <br> delivering top-quality products and services to our valued customers. <br><span style="color: blue;">Risus suspendisse a orci penatibus a felis suscipit consectetur <br> vestibulum sodales dui cum ultricies lacus interdum.</span> <br><br>
+
+                    One morning, when Gregor Samsa woke from troubled dreams, <br> he found himself transformed in his bed into a horrible vermin. He <br> lay on his armour-like back, and if he lifted his head a little he could <br> see his brown belly, slightly domed and divided by arches into stiff. <br><br>
+                    
+                    Dictumst per ante cras suscipit nascetur ullamcorper in nullam <br> fermentum condimentum torquent iaculis reden posuere potenti <br> viverra condimentum dictumst id tellus suspendisse.</p>
+            </div>
+        </div>
+    </div>
+    <div class="ar">
+        <div class="ee">
+            <div class="bb">
+                <h1 id="oo">Our Mission</h1>
+                <p id="qw">Our mission is to provide sofas design that enhances <br>  the lives of our customers. We strive to maintain the <br> highest standards of quality, innovation, and customer <br>service, ensuring that we exceed expectations at every step.</p>
+            </div>
+            <div class="bb">
+                <h1 id="oo">Our Values</h1>
+                <p id="qw"> We prioritize the needs and satisfaction of our <br> above all else.We continuously strive for improvement <br> embrace new  ideas to stay ahead. We conduct business<br> honesty,ethics, and transparency in all our dealings.</p>
+            </div>
+            <div class="bb">
+                <h1 id="oo">Why Choose Us?</h1>
+                <p id="qw"> With ten years of industry experience, we bring <br> and professionalism to everything we do.
+
+                    We stand by the <br> quality of our products and services, ensuring they meet <br> highest standards.
+                    
+                    Our dedicated support team is always <br> to assist you with any inquiries or concerns.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="you">
+            <div class="pol">
+                <div class="rows">
+                    <h2>USEFUL LINK</h2>
+                    <a href="home.html"> <h4 id="po">Home</h4></a>
+                    <a href="about.html"><h4 id="po">About Us</h4></a>
+                    <a href="contact.html"><h4 id="po">Contact Us</h4></a>
+                   </div>
+                   <div class="rows">
+                       <h2 id="op">PRODUCT</h2>
+                    <a href="card.html"><h4 id="po">House Sofa</h4></a>
+                   <a href="office.html"> <h4 id="po">Office Sofa</h4></a>
+                    <a href="hotel.html"><h4 id="po">Hotel Sofa</h4></a>
+                   </div>
+                   <div class="rows">
+                       <h2 id="op">CONTACT US</h2>
+                    <h4 id="po"><i class="fas fa-phone"></i> 0321-5432136</h4>
+                    <h4 id="po"><i class="fas fa-envelope"></i> oxfordsofa12@gmail.com</h4>
+                </div>
+              
+            </div>
+        </div>
+       </footer>
+</body>
+</html>
